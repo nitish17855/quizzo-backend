@@ -17,4 +17,6 @@ const pool = new Pool({
     : false,
 });
 
-export const db = drizzle(pool);
+const db = drizzle(pool);
+
+export default db;
