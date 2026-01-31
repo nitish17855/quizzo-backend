@@ -14,6 +14,16 @@ const app = express();
 
 const PORT = process.env.PORT || 4000;
               
+import cors from "cors";
+
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://quizzo-frontend-26ru.vercel.app"
+  ],
+  credentials: true
+}));
+app.options("*", cors());
 
 app.use(express.json());     
 
