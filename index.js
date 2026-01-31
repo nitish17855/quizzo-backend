@@ -14,7 +14,7 @@ const app = express();
 
 const PORT = process.env.PORT || 4000;
               
-import cors from "cors";
+
 
 app.use(cors({
   origin: [
